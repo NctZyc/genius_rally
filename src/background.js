@@ -65,6 +65,9 @@ app.on('ready', async () => {
   createWindow()
 })
 
+//禁止浏览器跨域策略
+app.commandLine.appendSwitch('disable-web-security');
+
 // Exit cleanly on request from parent process in development mode.
 if (isDevelopment) {
   if (process.platform === 'win32') {

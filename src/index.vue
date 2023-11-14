@@ -2,6 +2,7 @@
     <div id="flex-container">
         <LayoutBlocak v-for="item in data" :key="item.title" v-bind:title="item.title" v-bind:width="item.width" v-bind:height="item.height"/>
     </div>
+    <router-link to="/login">去登陆</router-link>
     <router-link to="/jsonTranslate">到jsonTranslate路由</router-link>
 </template>
     
